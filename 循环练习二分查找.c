@@ -3,29 +3,29 @@
 int main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int right = sizeof(arr) / sizeof(arr[0]) - 1;//"1"µÄÏÂ±êÎª0£»¡°10¡±µÄÏÂ±êÎª9   9/2=4
+	int right = sizeof(arr) / sizeof(arr[0]) - 1;//"1"çš„ä¸‹æ ‡ä¸º0ï¼›â€œ10â€çš„ä¸‹æ ‡ä¸º9   9/2=4
 	int left = 0;
 	int key = 1;
 	int mid = 0;
 	while (left <= right)
 	{
-		mid = (left + right) / 2;
+		mid = (left + right) / 2;//é¿å…è¶…å‡ºèŒƒå›´å†™æˆmid=left+(right-left)/2;
 		if (arr[mid] > key)
 		{
-			right = mid + 1;//´ËÊ±midĞèÒªÉáÈ¥£¬ËùÒÔ×óÓÒÓĞ¼Ó¼õ1µÄÇé¿ö
+			right = mid - 1;//æ­¤æ—¶midéœ€è¦èˆå»ï¼Œæ‰€ä»¥å·¦å³æœ‰åŠ å‡1çš„æƒ…å†µ
 		}
 		else if (arr[mid] < key)
 		{
-			left = mid - 1;
+			left = mid + 1;
 		}
 		else
 			break;
 	}
 	if (left <= right)
 	{
-		printf("¹§Ï²Äã£¬ÕÒµ½ÁË£¬ÏÂ±êÎª%d\n", mid);
+		printf("æ­å–œä½ ï¼Œæ‰¾åˆ°äº†ï¼Œä¸‹æ ‡ä¸º%d\n", mid);
 	}
 	else
-		printf("ÕÒ²»µ½\n");
+		printf("æ‰¾ä¸åˆ°\n");
 	return 0;
 }
