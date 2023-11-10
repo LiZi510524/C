@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 //#include<stdio.h>
-//void print(unsigned int n)   //´Ë´¦ÊÇprint¶ø²»ÊÇprintfÈç¹ûÊ¹ÓÃprintfÔò»á·¢Éú´íÎó£¨ÕæµÄÏë¿Ş£¬¿´ÁËºÃ¶à±é¶¼Ã»·¢ÏÖÕâ¸öÎÊÌá
+//void print(unsigned int n)   //æ­¤å¤„æ˜¯printè€Œä¸æ˜¯printfå¦‚æœä½¿ç”¨printfåˆ™ä¼šå‘ç”Ÿé”™è¯¯ï¼ˆçœŸçš„æƒ³å“­ï¼Œçœ‹äº†å¥½å¤šééƒ½æ²¡å‘ç°è¿™ä¸ªé—®æ
 //{
 //	if (n > 9)
 //	{
@@ -18,3 +18,41 @@
 //
 //}
 
+ //ç¼–å†™å‡½æ•°ä¸å…è®¸åˆ›å»ºä¸´æ—¶å˜é‡ï¼Œæ±‚å­—ç¬¦ä¸²çš„é•¿åº¦
+ 
+//#include<stdio.h>
+//int my_strlen(char* str)  //é€šè¿‡æŒ‡é’ˆçš„å½¢å¼
+////int my_strlen(char str[])é€šè¿‡å‚æ•°éƒ¨åˆ†å†™å‡ºæ•°ç»„çš„å½¢å¼
+//{
+//	int count = 0;
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	char arr[] = "abc";
+//	int len = my_strlen(arr);
+//	printf("%d", len);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//		return 1 + my_strlen(str+1);
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "abc";
+//	int len = my_strlen(arr);
+//	printf("%d", len);
+//	return 0;
+//}
